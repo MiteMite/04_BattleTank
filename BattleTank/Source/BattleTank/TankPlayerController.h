@@ -21,6 +21,10 @@ public:
 	void Tick(float DeltaTime) override;
 
 private:
+	UPROPERTY(EditAnywhere,Category="TankPlayerController")
+	float CrossHairXLocation = 0.5f;
+	UPROPERTY(EditAnywhere, Category = "TankPlayerController")
+	float CrossHairYLocation = 0.333f;
 	//start the tank moving the barrel
 	void AimTowardsCrosshair();
 
