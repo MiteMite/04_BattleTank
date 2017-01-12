@@ -33,7 +33,7 @@ void ATankPlayerController::AimTowardsCrosshair()
 	//get world location if linetrace through crosshair
 	if (GetSightRayHitLocation(HitLocation)) //has side effect is going to line trace
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Look direction: %s"), *HitLocation.ToString());
+		GetControlledTank()->AimAt(HitLocation);
 	}
 	
 	
