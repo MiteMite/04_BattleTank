@@ -15,6 +15,9 @@ protected:
 	UTankAimingComponent* TankAimingComponent = nullptr;
 public:
 	void AimAt(FVector HitLocation);
+
+	UFUNCTION(BlueprintCallable,Category="Tank")
+	void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
 private:
 	// Sets default values for this pawn's properties
 	ATank();
